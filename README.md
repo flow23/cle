@@ -5,6 +5,12 @@ Command Line Essentials
 ctop -a
 ```
 ---
+## curl
+### Receive public IP address
+```
+curl ifconfig.me/ip
+```
+---
 ## docker
 ### Build image from Dockerfile with tagging
 ```
@@ -27,6 +33,11 @@ history | grep docker
 ## homebrew
 ### TBF
 ---
+## python
+### Serve current directory tree at http://$hostname:8000
+```
+python -m SimpleHTTPServer
+```
 ## sed - stream editor
 ### Search and replace text inside a file
 ### Remove specific line from file specified by line number
@@ -36,6 +47,12 @@ sed -i '76d' src/rev.cpp.in
 ---
 ## sox - audio interface
 ### TBF
+---
+## sudo - 
+### Execute previous command with sudo
+```
+sudo !!
+```
 ---
 ## tmux - terminal multiplexer
 ### Create new session
