@@ -46,7 +46,10 @@ sed -i '76d' src/rev.cpp.in
 ```
 ---
 ## sox - audio interface
-### TBF
+### Merge all *.mp3 after one another into one single .mp3 file while using bitrate 192kb/s 
+```
+sox 0*.mp3 -C 192.01 -c 2 -S "Benjamin Blümchen - 026 - Als Bademeister.mp3"
+```
 ---
 ## sudo - 
 ### Execute previous command with sudo
