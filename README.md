@@ -62,6 +62,10 @@ sudo !!
 ```
 env GZIP=-9 tar cvzf file.tar.gz /path/to/directory
 ```
+### List the content of a .tar.gz file
+```
+tar -ztvf file.tar.gz
+```
 ## tmux - terminal multiplexer
 ## tmux - terminal multiplexer
 ### Create new session
