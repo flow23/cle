@@ -57,6 +57,12 @@ sox 0*.mp3 -C 192.01 -c 2 -S "Benjamin Blümchen - 026 - Als Bademeister.mp3"
 sudo !!
 ```
 ---
+## tar with gzip - tape archiver :) and gunzip
+### Create .tar.gz with highest compression
+```
+env GZIP=-9 tar cvzf file.tar.gz /path/to/directory
+```
+## tmux - terminal multiplexer
 ## tmux - terminal multiplexer
 ### Create new session
 ```
