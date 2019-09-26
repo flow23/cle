@@ -1,5 +1,11 @@
 # cle
 Command Line Essentials
+## convert
+### Create animated gif from multiple images and loop forever
+```
+convert -loop 0 -delay 200 1.png 2.png 3.png 4.png 5.png 6.png 7.png 8.png output.gif
+```
+---
 ## [ctop](https://github.com/bcicen/ctop) - top-like interface for docker container
 ```
 ctop -a
