@@ -26,9 +26,20 @@ docker build -f Dockerfile -t flow1985/openttd-jgr .
 ```
 docker exec -it b9edef51a553 /bin/bash
 ```
+### Show logs from container
+```
+docker logs -f b9e
+```
+### Run container with port forwarding and volume mounting
+```
+docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/zcs_tpm:/usr/src/app sapui5-ide-docker:1.69.0-sdk
+```
 ---
 ## git
-### TBF
+### Presents the list of commits with hash one per line
+```
+git log --pretty=oneline
+```
 ---
 ## history
 ### Grep a certain command from history
@@ -37,7 +48,16 @@ history | grep docker
 ```
 ---
 ## homebrew
-### TBF
+### Install brew formula
+```
+brew install gifify
+```
+---
+## npm - node.js package manager
+### Install without dependencies in package.json
+```
+npm install --production
+```
 ---
 ## python
 ### Serve current directory tree at http://$hostname:8000
@@ -55,6 +75,10 @@ sed -i '76d' src/rev.cpp.in
 ### Merge all *.mp3 after one another into one single .mp3 file while using bitrate 192kb/s 
 ```
 sox 0*.mp3 -C 192.01 -c 2 -S "Benjamin Blümchen - 026 - Als Bademeister.mp3"
+```
+### Take the first 120 minutes from a audio file
+```
+sox jAOW8-u1Xh8.mp3 output.mp3 trim 0 120:00
 ```
 ---
 ## sudo - 
