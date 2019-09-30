@@ -1,5 +1,10 @@
 # cle
 Command Line Essentials
+## cmatrix
+### Having fun on the console, rainbow matrix screensaver
+```
+cmatrix -abr
+```
 ## convert
 ### Create animated gif from multiple images and loop forever
 ```
