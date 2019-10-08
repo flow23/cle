@@ -40,6 +40,11 @@ docker logs -f b9e
 docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/zcs_tpm:/usr/src/app sapui5-ide-docker:1.69.0-sdk
 ```
 ---
+## gifify
+### Creates animated gif from image files
+```
+gifify -p 800:577 -r 1@1 -o my-gif *.png
+```
 ## git
 ### Presents the list of commits with hash one per line
 ```
