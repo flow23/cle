@@ -40,6 +40,12 @@ docker logs -f b9e
 docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/zcs_tpm:/usr/src/app sapui5-ide-docker:1.69.0-sdk
 ```
 ---
+## ffmpeg
+### Convert video to x264 and copying video and audio
+```
+ffmpeg -i file.mkv -c:v libx264 -c:a copy -c:s copy -n out.mkv
+```
+---
 ## gifify
 ### Creates animated gif from image files
 ```
