@@ -69,6 +69,12 @@ history | grep docker
 brew install gifify
 ```
 ---
+## nmap - the Network Mapper
+### Scan a network and find out which servers and devices are up and running
+```
+nmap -sP 192.168.1.0/24
+```
+---
 ## npm - node.js package manager
 ### Install without dependencies in package.json
 ```
