@@ -69,6 +69,12 @@ history | grep docker
 brew install gifify
 ```
 ---
+## ncdu - NCurses disk usage
+### Analyzing disk usage
+```
+ncdu
+```
+---
 ## nmap - the Network Mapper
 ### Scan a network and find out which servers and devices are up and running
 ```
