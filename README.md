@@ -22,6 +22,12 @@ ctop -a
 curl ifconfig.me/ip
 ```
 ---
+## diskutil
+### Erasing sd card and formattig with FAT32
+```
+sudo diskutil eraseDisk FAT32 SDCARD MBRFormat /dev/disk2
+```
+---
 ## docker
 ### Build image from Dockerfile with tagging
 ```
