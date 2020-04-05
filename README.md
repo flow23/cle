@@ -43,7 +43,7 @@ docker logs -f b9e
 ```
 ### Run container with port forwarding and volume mounting
 ```
-docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/zcs_tpm:/usr/src/app sapui5-ide-docker:1.69.0-sdk
+docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/MyProject:/usr/src/app sapui5-ide-docker:1.69.0-sdk
 ```
 ---
 ## ffmpeg
