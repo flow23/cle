@@ -46,6 +46,12 @@ docker logs -f b9e
 docker run -d -p 8080:8080 -p 8081:8081 -v /Users/florianwallburg/Documents/MyProject:/usr/src/app sapui5-ide-docker:1.69.0-sdk
 ```
 ---
+## dwebp
+### Decode webp format
+```
+dwebp input.webp -o output.png
+```
+---
 ## ffmpeg
 ### Convert video to x264 and copying video and audio
 ```
