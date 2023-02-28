@@ -58,6 +58,12 @@ dwebp input.webp -o output.png
 ffmpeg -i file.mkv -c:v libx264 -c:a copy -c:s copy -n out.mkv
 ```
 ---
+## find
+### Copy only files from directory and subdirectories to current folder
+```
+find . -type f -exec cp {} . \;
+```
+---
 ## gifify
 ### Creates animated gif from image files
 ```
