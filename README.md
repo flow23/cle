@@ -157,6 +157,15 @@ tmux a
 ```
 Prefix + d
 ``` 
+## yt-dlp - youtube download client for command line
+### Show all donwload formats
+```
+yt-dlp -F https://www.youtube.com/watch\?v\=1__CAdTJ5JU
+``` 
+### Download audio source from video as mp3
+```
+yt-dlp -f 140 -x --audio-format mp3  https://www.youtube.com/watch\?v\=1__CAdTJ5JU
+``` 
 
 
 
