@@ -57,6 +57,18 @@ dwebp input.webp -o output.png
 ```
 ffmpeg -i file.mkv -c:v libx264 -c:a copy -c:s copy -n out.mkv
 ```
+### Concat videos from list.txt to one single file
+```
+ffmpeg -f concat -i list.txt -c copy 20250510.MOV
+```
+### Concat videos from list.txt to one single file w/o audio
+```
+ffmpeg -f concat -i list.txt -c copy -an 20250510.MOV
+```
+### Concat videos from list.txt to one single file w/o audio and send it to background processing
+```
+nohup ffmpeg  -nostdin -f concat -i list.txt -c copy -an 20250510.MOV &
+```
 ---
 ## find
 ### Copy only files from directory and subdirectories to current folder
