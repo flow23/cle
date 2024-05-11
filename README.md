@@ -69,6 +69,14 @@ ffmpeg -f concat -i list.txt -c copy -an 20250510.MOV
 ```
 nohup ffmpeg  -nostdin -f concat -i list.txt -c copy -an 20250510.MOV &
 ```
+### Speed up video by 10 times
+```
+ffmpeg -i 20240510.MOV -an -vf "setpts=PTS/10" 20240510_10x.mp4
+```
+### Speed up video by 10 times and resize to 640x480
+```
+ffmpeg -i 20240510.MOV  -vf "setpts=PTS/10, scale=640:480" -an 20240510_10x.mp4
+```
 ---
 ## find
 ### Copy only files from directory and subdirectories to current folder
